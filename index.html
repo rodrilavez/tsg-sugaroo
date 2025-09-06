@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>The Sakai Group — Partnerships.</title>
+  <meta name="description" content="TSG Partnerships" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="manifest" href="./public/site.webmanifest">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#000000">
+  
+  <!-- OpenGraph Meta Tags for Social Media Sharing -->
+  <meta property="og:title" content="The Sakai Group — Partnerships" />
+  <meta property="og:description" content="Collaboration proposal between The Sakai Group and Sugaroo to empower rock/alt artists." />
+  <meta property="og:image" content="https://thesakaigroup.vercel.app/images/tsg-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:alt" content="The Sakai Group logo" />
+  <meta property="og:url" content="https://thesakaigroup.vercel.app/" />
+  <link rel="shortcut icon" href="./public/favicon-32x32.png" type="image/png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Sakai Group" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Sakai Group — Partnerships" />
+  <meta name="twitter:description" content="Collaboration proposal between The Sakai Group and Sugaroo to empower rock/alt artists." />
+  <meta name="twitter:image" content="https://thesakaigroup.vercel.app/images/tsg-preview.png" />
+  <meta name="twitter:image:alt" content="The Sakai Group logo" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #000;
+      --brand-accent: #fdf764;
+      --text: #fff;
+      --muted: #aaa;
+      --soft: #333;
+      --panel: #111;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
+      --radius: 8px;
+      --radius-lg: 16px;
+      --transition: all 0.3s ease;
+      --vh: 1vh;
+    }
+
+    body {
+      background: #000;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Global Styles */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      background: rgba(17, 17, 17, 0.98);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 16px 0;
+    }
+
+    /* Button Styles */
+    .btn {
+      background: #fff;
+      color: #000;
+      border: 1px solid #fff;
+      transition: var(--transition);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .btn::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      left: 0;
+      top: 0;
+      transition: width 0.3s ease;
+      z-index: -1;
+    }
+
+    .btn:hover {
+      background: #000;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .btn:hover::after {
+      width: 100%;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(4px);
+    }
+
+    .btn.secondary:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #111, #000);
+      color: var(--text);
+    }
+
+    .media {
+      background: #222;
+      color: var(--muted);
+    }
+
+    footer {
+      background: #111;
+      color: var(--muted);
+    }
+
+    .artist .ph {
+      background: url('./images/garzi.webp') center/cover no-repeat;
+    }
+
+    .artist:nth-child(2) .ph {
+      background: url('./images/gvllow.webp') center/cover no-repeat;
+    }
+
+    .artist:nth-child(3) .ph {
+      background: url('./images/mica.webp') center/cover no-repeat;
+    }
+
+    .artist:nth-child(4) .ph {
+      background: url('./images/sinnerella.webp') center/cover no-repeat;
+    }
+
+    .artist:nth-child(5) .ph {
+      background: url('./images/joeycash.webp') center/cover no-repeat;
+    }
+
+
+    /* Buttons */
+    .btn { 
+      display: inline-flex; 
+      align-items: center; 
+      justify-content: center;
+      gap: 10px; 
+      padding: 14px 24px; 
+      border-radius: 6px; 
+      font-weight: 600; 
+      border: 1px solid rgba(255,255,255,.1); 
+      background: #fff; 
+      color: #000; 
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      font-size: 15px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s ease;
+    }
+    .btn:hover:after {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+    .btn.secondary { 
+      background: rgba(255,255,255,0.05); 
+      color: var(--text); 
+      border-color: rgba(255,255,255,.15); 
+      box-shadow: none; 
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    .btn.secondary:hover {
+      background: rgba(255,255,255,0.09);
+      border-color: rgba(255,255,255,.25);
+    }
+    .btn i {
+      font-size: 18px;
+      transition: transform 0.3s ease;
+    }
+    
+    .btn:hover i {
+      transform: translateX(3px);
+    }
+    
+    .btn.copied {
+      background-color: var(--brand-accent) !important;
+      color: #000 !important;
+      border-color: var(--brand-accent) !important;
+      transform: translateY(-3px);
+      transition: all 0.3s ease;
+    }
+    
+    .btn.copied i {
+      transform: scale(1.2);
+    }
+    
+    .artist .btn {
+      flex: 1;
+      min-width: 0;
+      padding: 12px 10px;
+      font-size: 14px;
+      max-width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    @media (max-width: 768px) {
+      .artist .btn {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+
+    /* Hero */
+    .hero { 
+      padding: 120px 0 100px; 
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at top right, rgba(253, 247, 100, 0.05), transparent 70%),
+                  linear-gradient(180deg, #0c0c0c, #000);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,0.03), transparent);
+      pointer-events: none;
+    }
+    .hero-grid { 
+      display: grid; 
+      grid-template-columns: 1.2fr .8fr; 
+      gap: 48px; 
+      align-items: center; 
+    }
+    .hero h1 { 
+      font-size: clamp(36px, 5vw, 56px); 
+      line-height: 1.1; 
+      margin: 0 0 24px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .hero p { 
+      color: var(--muted); 
+      font-size: clamp(16px, 2vw, 18px);
+      margin-bottom: 32px;
+    }
+    .card { 
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01)); 
+      border: 1px solid rgba(255,255,255,.06); 
+      border-radius: var(--radius); 
+      box-shadow: var(--shadow); 
+      padding: 32px; 
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    .media { 
+      aspect-ratio: 16/10; 
+      border-radius: var(--radius); 
+      background: linear-gradient(135deg, rgba(253, 247, 100, 0.05), rgba(255,255,255,0.02)); 
+      overflow: hidden;
+      position: relative;
+    }
+
+
+    /* Sections */
+    section { 
+      padding: 100px 0; 
+      position: relative;
+    }
+    section:nth-child(even) {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0) 80%);
+    }
+    h2 { 
+      font-size: clamp(28px, 3vw, 38px); 
+      margin: 0 0 24px; 
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .kicker { 
+      color: var(--brand-accent); 
+      text-transform: uppercase; 
+      letter-spacing: .15em; 
+      font-weight: 600; 
+      font-size: 12px;
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+    .grid { 
+      display: grid; 
+      gap: 32px; 
+    }
+
+
+    /* Philosophy bullets */
+    .bullets { 
+      display: grid; 
+      gap: 16px; 
+      margin-top: 24px;
+    }
+    .bullet { 
+      background: rgba(253, 247, 100, 0.03);
+      border: 1px solid rgba(253, 247, 100, 0.08); 
+      border-radius: var(--radius); 
+      padding: 20px 24px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .bullet:hover {
+      background: rgba(255,255,255,0.03);
+      transform: translateX(5px);
+    }
+    .bullet:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 3px;
+      background: var(--brand-accent);
+      opacity: 0.5;
+    }
+
+
+    /* Artists */
+    .artist-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+      gap: 32px; 
+      margin-top: 48px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 1200px) { 
+      .artist-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+        padding: 0 12px;
+      } 
+    }
+    @media (max-width: 1000px) { 
+      .hero-grid { 
+        grid-template-columns: 1fr; 
+        gap: 32px;
+      } 
+      .artist-grid { 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      } 
+      .hero > .container > div:nth-child(2) {
+        order: -1;
+      }
+    }
+    @media (max-width: 560px) { 
+      .artist-grid { 
+        grid-template-columns: 1fr; 
+        gap: 28px;
+        max-width: 340px;
+      } 
+      h2 {
+        font-size: 24px;
+      }
+      .hero-grid {
+        gap: 24px;
+      }
+      .container {
+        padding: 0 16px;
+      }
+      .card {
+        padding: 24px 16px;
+      }
+    }
+    .artist { 
+      background: var(--panel); 
+      border: 1px solid rgba(255,255,255,.08); 
+      border-radius: var(--radius-lg); 
+      overflow: hidden; 
+      display: grid; 
+      grid-template-rows: 240px auto;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+    .artist:hover, .artist.touch-active {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+      border-color: rgba(255,255,255,.22);
+    }
+    .artist:after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .artist:hover:after {
+      opacity: 1;
+    }
+    .artist .ph { 
+      background-position: center;
+      background-size: cover;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      position: relative;
+      transition: transform 1.5s ease;
+    }
+    .artist:hover .ph, .artist.touch-active .ph {
+      transform: scale(1.05);
+    }
+    .artist .ph::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 70%;
+      background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2) 80%, transparent);
+      z-index: 2;
+    }
+    
+    .artist-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: flex-end;
+      padding: 24px;
+      opacity: 0;
+      transition: all 0.4s ease;
+      z-index: 3;
+      -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+    }
+    
+    .artist:hover .artist-overlay, .artist.touch-active .artist-overlay {
+      opacity: 1;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+    }
+    
+    .artist-details {
+      transform: translateY(20px);
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    .artist:hover .artist-details, .artist.touch-active .artist-details {
+      transform: translateY(0);
+    }
+    
+    .artist-overlay h3 {
+      color: white;
+      font-size: 24px;
+      margin: 0 0 8px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    
+    .artist-overlay p {
+      color: rgba(255,255,255,0.7);
+      margin: 0;
+      font-size: 15px;
+    }
+    .artist .body { 
+      padding: 28px 24px; 
+      display: grid; 
+      gap: 18px; 
+    }
+    .tag { 
+      display: inline-flex; 
+      align-items: center;
+      justify-content: center;
+      height: 24px;
+      font-size: 11px;
+      font-weight: 600; 
+      padding: 0 12px; 
+      border-radius: 50px; 
+      background: rgba(253, 247, 100, .1); 
+      color: #fdf764; 
+      letter-spacing: 0.03em;
+      position: relative;
+      overflow: hidden;
+      line-height: 1;
+      white-space: nowrap;
+      max-width: 100%;
+    }
+    .tag::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.5s;
+    }
+    .artist:hover .tag::after {
+      left: 100%;
+    }
+
+
+    /* Columns */
+    .cols { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 32px; 
+    }
+    .cols .card {
+      height: 100%;
+    }
+    @media (max-width: 800px) { 
+      .cols { 
+        grid-template-columns: 1fr; 
+        gap: 24px;
+      } 
+    }
+    
+    /* Lists */
+    ul {
+      margin: 24px 0;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 16px;
+      position: relative;
+      padding-left: 8px;
+    }
+    li::marker {
+      color: var(--brand-accent);
+    }
+
+
+    /* Footer */
+    footer { 
+      padding: 60px 0 80px; 
+      color: var(--muted); 
+      border-top: 1px solid rgba(255,255,255,.06); 
+      background: linear-gradient(180deg, rgba(255,255,255,.01), transparent);
+      position: relative;
+    }
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255,255,255,0.1) 20%, 
+        rgba(255,255,255,0.1) 80%, 
+        transparent);
+    }
+    .small { 
+      font-size: 12px; 
+      color: #666;
+      font-weight: 300;
+    }
+
+
+    /* Utility */
+    .spaced { 
+      display: flex; 
+      gap: 12px; 
+      flex-wrap: wrap;
+    }
+    .right { 
+      text-align: right; 
+    }
+    
+    /* Prevent horizontal overflow */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      overflow-x: hidden;
+    }
+    
+    /* Navigation */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      font-weight: 600;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo {
+      height: 24px;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    nav {
+      display: flex;
+      gap: 12px;
+    }
+    
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        padding: 12px 0;
+      }
+      
+      .nav {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+      }
+      
+      .brand {
+        font-size: 16px;
+      }
+      
+      .brand-logo {
+        height: 20px;
+      }
+      
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        max-width: 100%;
+      }
+      
+      nav a {
+        flex: 1;
+        text-align: center;
+        padding: 12px 16px !important;
+        font-size: 14px;
+        max-width: 130px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+      }
+      
+      nav .btn {
+        width: auto;
+        min-width: 0;
+        padding: 12px 16px !important;
+        line-height: 1.2;
+      }
+      
+      .hero {
+        padding: 60px 0 50px;
+      }
+      
+      .hero h1 {
+        font-size: clamp(28px, 6vw, 40px);
+      }
+      
+      .hero p {
+        font-size: 16px;
+      }
+      
+      .card {
+        padding: 24px;
+      }
+      
+      section {
+        padding: 60px 0;
+      }
+      
+      .spaced {
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .hero .spaced {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      
+      .artist .spaced {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+      
+      .artist .spaced a {
+        font-size: 13px;
+        padding: 10px 16px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      
+      .btn {
+        padding: 14px 18px;
+        font-size: 14px;
+        min-height: 48px;
+        box-sizing: border-box;
+        line-height: 1.2;
+      }
+      
+      .right {
+        text-align: center;
+        margin-top: 24px;
+        width: 100%;
+      }
+      
+      /* Add better spacing in mobile for hero */
+      .hero-grid {
+        gap: 32px;
+      }
+      
+      /* Make bullet points more readable on mobile */
+      .bullet {
+        padding: 18px 20px;
+        font-size: 15px;
+      }
+      
+      /* Improve artist presentation on tablets/small screens */
+      .artist .ph {
+        height: 220px;
+      }
+      
+      /* Better visual separation between sections */
+      section + section {
+        margin-top: 10px;
+      }
+      
+      /* Make tag more visible on mobile */
+      .tag {
+        font-size: 10px;
+        height: 22px;
+        padding: 0 10px;
+      }
+      
+      /* Fix artist info layout */
+      .artist h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+      }
+      
+      .artist p {
+        margin-top: 4px !important;
+        margin-bottom: 16px !important;
+        font-size: 14px !important;
+      }
+      
+      .artist .body {
+        padding: 20px 16px;
+        gap: 12px;
+      }
+      
+      /* Fix artist grid on mobile */
+      .artist-grid {
+        padding: 0;
+        margin: 32px auto 0;
+        max-width: 100%;
+      }
+      
+      .artist {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header {
+        padding: 10px 0;
+      }
+      
+      .nav {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+      }
+      
+      .brand {
+        font-size: 16px;
+        gap: 8px;
+      }
+      
+      .brand-logo {
+        height: 18px;
+      }
+      
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        max-width: 350px;
+        margin: 0 auto;
+      }
+      
+      nav a {
+        flex: 1;
+        text-align: center;
+        padding: 10px 8px !important;
+        font-size: 12px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 110px;
+        line-height: 1.3;
+      }
+      
+      nav a i {
+        display: none; /* Hide icons on very small screens to save space */
+      }
+      
+      nav a:last-child {
+        max-width: 110px;
+      }
+      
+      /* Show icons on larger mobile screens */
+      @media (min-width: 400px) {
+        nav a i {
+          display: inline-block;
+          margin-left: 4px;
+          font-size: 14px;
+        }
+        
+        nav {
+          max-width: 380px;
+        }
+        
+        nav a {
+          max-width: 120px;
+          font-size: 13px;
+        }
+      }
+      
+      .hero {
+        padding: 50px 0 40px;
+      }
+      
+      .container {
+        padding: 0 16px;
+      }
+      
+      .card {
+        padding: 20px;
+      }
+      
+      .bullet {
+        padding: 16px;
+      }
+      
+      .cols .card {
+        margin-bottom: 16px;
+      }
+      
+      .artist .body {
+        padding: 16px 12px;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+      .artist {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+      
+      .artist .spaced {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+      
+      .artist .spaced a {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 13px;
+        box-sizing: border-box;
+      }
+      
+      .btn {
+        width: 100%;
+        justify-content: center;
+        min-height: 46px;
+        font-size: 14px;
+        padding: 12px 16px;
+        line-height: 1.3;
+      }
+      
+      .hero .spaced {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+      .cols[style*="align-items:center"] {
+        text-align: center;
+      }
+      
+      .cols[style*="align-items:center"] .right {
+        text-align: center;
+      }
+      
+      #contact .btn {
+        padding: 12px 16px;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+      
+      /* Additional mobile optimizations */
+      h2 {
+        font-size: 22px;
+        line-height: 1.3;
+      }
+      
+      .kicker {
+        font-size: 11px;
+        margin-bottom: 10px;
+      }
+      
+      /* Fix image sizing on very small screens */
+      .media, .artist .ph {
+        min-height: 180px;
+      }
+      
+      /* Make list text more readable */
+      ul {
+        padding-left: 16px;
+        margin: 16px 0;
+      }
+      
+      li {
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      
+      /* Better spacing for footer on mobile */
+      footer {
+        padding: 30px 0 40px;
+      }
+      
+      /* Fix layout for contact section */
+      #contact .cols {
+        gap: 20px;
+      }
+      
+      /* Fix spacing around images */
+      img {
+        margin: 0 auto;
+      }
+      
+      /* Prevent image overflow */
+      .hero img {
+        max-height: 120px;
+      }
+      
+      /* Improve artist grid spacing */
+      .artist-grid {
+        gap: 24px;
+        margin-top: 24px;
+      }
+    }
+    
+    /* Animations and Transitions */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    .fadeIn {
+      animation: fadeIn 0.8s ease forwards;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      .fadeIn {
+        animation: fadeIn 0.2s ease forwards;
+      }
+    }
+    
+    /* Image styling */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="./images/sakai.png" alt="The Sakai Group Logo" class="brand-logo">
+        <span>The Sakai Group</span>
+      </div>
+      <nav>
+        <a href="#artists" class="btn secondary">Artists</a>
+        <a href="#partnerships" class="btn secondary">Opportunities</a>
+        <a href="#contact" class="btn">Contact <i class='bx bx-right-arrow-alt'></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card">
+          <p class="kicker">TSG Partnerships</p>
+          <h1>When Artists Thrive, the World Is a Better Place</h1>
+          <p>Collaboration proposal between <strong>The Sakai Group</strong> and <strong>Sugaroo</strong> to empower rock/alt artists authentically, sustainably, and with cultural impact.</p>
+          <div class="spaced" style="margin-top:32px;">
+            <a class="btn" href="#artists">See artists <i class='bx bx-group'></i></a>
+            <a class="btn secondary" href="#why">Why it matters <i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; justify-content: center; padding: 20px;">
+            <img src="./images/sakai.png" alt="The Sakai Group" style="max-width: 100%; max-height: 200px; object-fit: contain; transition: transform 0.3s ease;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section id="philosophy">
+      <div class="container cols">
+        <div class="card">
+          <p class="kicker">Philosophy</p>
+          <h2>Artist Well‑Being First</h2>
+          <div class="bullets">
+            <div class="bullet">Mental and physical health are the foundation for long-term success.</div>
+            <div class="bullet">Creative sustainability: healthy artists make better music, deeper connections, and longer careers.</div>
+            <div class="bullet">Holistic management: we invest in personal growth, therapy, fitness, and balance.</div>
+          </div>
+        </div>
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <img src="./images/crowd.tiff" alt="Crowd at concert" style="width: 100%; object-fit: cover; display: block; min-height: 100%; filter: contrast(1.1) brightness(1.05);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTISTS -->
+    <section id="artists">
+      <div class="container">
+        <p class="kicker">Roster</p>
+        <h2>Artists we represent</h2>
+        <div class="artist-grid" role="list">
+          <!-- Garzi -->
+          <article class="artist" role="listitem">
+            <div class="ph">
+              <div class="artist-overlay">
+                <div class="artist-details">
+                  <h3>Garzi</h3>
+                  <p>Voice of his generation</p>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <h3 style="margin:0;font-size:18px;font-weight:700;letter-spacing:-0.01em;">Garzi</h3>
+              <span class="tag">'Heart' out now</span>
+              <p style="margin:6px 0 20px;color:var(--muted);font-size:15px;line-height:1.5;">Voice of his generation; US tour (even with a fractured foot).</p>
+              <div class="spaced" style="gap:10px;">
+                <a class="btn" href="https://garzimusic.com/" target="_blank" rel="noopener">Landing</a>
+                <a class="btn secondary" href="https://open.spotify.com/artist/0w6YVGViQHcgC3eyc8LxUv?si=mIJ2Ay-NRHuaD6XA76geWA" target="_blank" rel="noopener">Spotify <i class='bx bxl-spotify'></i></a>
+              </div>
+            </div>
+          </article>
+          <!-- Gvllow -->
+          <article class="artist" role="listitem">
+            <div class="ph">
+              <div class="artist-overlay">
+                <div class="artist-details">
+                  <h3>Gvllow</h3>
+                  <p>Skate-punk meets goth</p>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <h3 style="margin:0;font-size:18px;font-weight:700;letter-spacing:-0.01em;">Gvllow</h3>
+              <span class="tag">New Album Coming</span>
+              <p style="margin:6px 0 20px;color:var(--muted);font-size:15px;line-height:1.5;">Skate‑punk/goth; new live album with Cameron Webb.</p>
+              <div class="spaced" style="gap:10px;">
+                <a class="btn" href="https://gvllow.com/" target="_blank" rel="noopener">Landing</a>
+                <a class="btn secondary" href="https://open.spotify.com/artist/69a2ovTpqzQrzthSkARvGn?si=SoQZrPYHQHqKZ9Z3P-dxQQ" target="_blank" rel="noopener">Spotify <i class='bx bxl-spotify'></i></a>
+              </div>
+            </div>
+          </article>
+          <!-- Mica -->
+          <article class="artist" role="listitem">
+            <div class="ph">
+              <div class="artist-overlay">
+                <div class="artist-details">
+                  <h3>Mica</h3>
+                  <p>Raw and magnetic presence</p>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <h3 style="margin:0;font-size:18px;font-weight:700;letter-spacing:-0.01em;">Mica</h3>
+              <span class="tag">Rising Star</span>
+              <p style="margin:6px 0 20px;color:var(--muted);font-size:15px;line-height:1.5;">Intimate, diary-like songs; raw and magnetic.</p>
+              <div class="spaced" style="gap:10px;">
+                <a class="btn" href="https://mica-landing.vercel.app/" target="_blank" rel="noopener">Landing</a>
+                <a class="btn secondary" href="https://open.spotify.com/artist/0ru8vaH80Oj3roXyoLmX4g?si=y1ZWSR0STZ6kWQwJNLvugQ" target="_blank" rel="noopener">Spotify <i class='bx bxl-spotify'></i></a>
+              </div>
+            </div>
+          </article>
+          <!-- Sinnarella -->
+          <article class="artist" role="listitem">
+            <div class="ph">
+              <div class="artist-overlay">
+                <div class="artist-details">
+                  <h3>Sinnerella</h3>
+                  <p>Bold experimental rock</p>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <h3 style="margin:0;font-size:18px;font-weight:700;letter-spacing:-0.01em;">Sinnerella</h3>
+              <span class="tag">Upcoming Visuals</span>
+              <p style="margin:6px 0 20px;color:var(--muted);font-size:15px;line-height:1.5;">Bold and experimental; brings rock to darker spaces.</p>
+              <div class="spaced" style="gap:10px;">
+                <a class="btn" href="https://sinnerellamusic.com/" target="_blank" rel="noopener">Landing</a>
+                <a class="btn secondary" href="https://open.spotify.com/artist/38tieThXSmq1BQw6MKxuyS?si=DHoEcVP8Re-Gv16589oiwQ" target="_blank" rel="noopener">Spotify <i class='bx bxl-spotify'></i></a>
+              </div>
+            </div>
+          </article>
+          <!-- Joey Cash -->
+          <article class="artist" role="listitem">
+            <div class="ph">
+              <div class="artist-overlay">
+                <div class="artist-details">
+                  <h3>Joey Cash</h3>
+                  <p>Emerging sound in motion</p>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <h3 style="margin:0;font-size:18px;font-weight:700;letter-spacing:-0.01em;">Joey Cash</h3>
+              <span class="tag">Building Momentum</span>
+              <p style="margin:6px 0 20px;color:var(--muted);font-size:15px;line-height:1.5;">Emerging, with his sound forming in real time.</p>
+              <div class="spaced" style="gap:10px;">
+                <a class="btn" href="https://joeycashmusic.com/" target="_blank" rel="noopener">Landing</a>
+                <a class="btn secondary" href="https://open.spotify.com/artist/6pvE3aqOyzjdcaReOneQjf?si=Efg84EGHRlaWnDWjkpln0Q" target="_blank" rel="noopener">Spotify <i class='bx bxl-spotify'></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERSHIPS / WHY -->
+    <section id="partnerships">
+      <div class="container cols">
+        <div class="card">
+          <p class="kicker">Opportunities with Sugaroo</p>
+          <h2>Let's collaborate where culture lives</h2>
+          <ul>
+            <li>Featured promotional opportunities across all Sugaroo platforms.</li>
+            <li>Artist wellness and development programs.</li>
+            <li>Creative storytelling and content creation.</li>
+            <li>Audience insights for optimized releases and tour planning.</li>
+          </ul>
+        </div>
+        <div class="card" id="why">
+          <p class="kicker">Why this matters</p>
+          <h2>Authenticity, catalog value, and cultural relevance</h2>
+          <ul>
+            <li>Authenticity wins: the future of rock belongs to real voices.</li>
+            <li>Long-term catalog: healthy artists produce consistently.</li>
+            <li>Trust: fans care about artists' well-being.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASKS / COMING UP -->
+    <section>
+      <div class="container cols">
+        <div class="card">
+          <p class="kicker">For the call</p>
+          <h2>Key Asks</h2>
+          <ul>
+            <li>Promotional consideration for all roster artists.</li>
+            <li>Collaborate on wellness-forward initiatives in rock/alt.</li>
+            <li>Access to data and insights for sustainable growth.</li>
+            <li>Open communication with Sugaroo team.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="kicker">Upcoming releases</p>
+          <h2>Coming Up</h2>
+          <ul>
+            <li><strong>Garzi</strong> — 'Heart' out now; US tour.</li>
+            <li><strong>Mica</strong> — New music late fall; first tours 2026.</li>
+            <li><strong>Sinnerella</strong> — Upcoming visuals and singles.</li>
+            <li><strong>Joey Cash</strong> — More singles to build momentum.</li>
+            <li><strong>Gvllow</strong> — Full-length album this year; strong live presence tied to skate/punk.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container card">
+        <div class="cols" style="align-items:center;">
+          <div>
+            <p class="kicker">Contact</p>
+            <h2>Let's talk</h2>
+            <p style="color:var(--muted)">Ready to explore this together? We can share KPIs, assets, and a proposed calendar.</p>
+          </div>
+          <div class="right">
+            <button class="btn" id="copyEmail">contact@thesakaigroup.com<i class='bx bx-envelope'></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+        <span class="small">© The Sakai Group</span>
+        <span class="small">Made for Sugaroo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+    
+    // Copy email to clipboard
+    document.getElementById('copyEmail').addEventListener('click', function() {
+      const email = 'contact@thesakaigroup.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const originalText = this.innerHTML;
+        this.innerHTML = 'Email copied! <i class="bx bx-check"></i>';
+        setTimeout(() => {
+          this.innerHTML = originalText;
+        }, 2000);
+      });
+    });
+    
+    // Add animation classes on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.card');
+      const artists = document.querySelectorAll('.artist');
+      const bullets = document.querySelectorAll('.bullet');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fadeIn');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      [...cards, ...artists, ...bullets].forEach(item => {
+        observer.observe(item);
+      });
+    });
+    
+    // Mobile optimization - prevent zoom on input focus
+    document.addEventListener('DOMContentLoaded', () => {
+      const metaViewport = document.querySelector('meta[name=viewport]');
+      let timer;
+      
+      // Handle both resize and orientation change events
+      const updateViewport = () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          if (window.innerWidth < 768) {
+            metaViewport.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no');
+          }
+        }, 30);
+      };
+      
+      window.addEventListener('resize', updateViewport);
+      window.addEventListener('orientationchange', updateViewport);
+      
+      // Fix buttons for touch devices
+      document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('touchstart', function() {
+          this.style.opacity = '0.8';
+        });
+        btn.addEventListener('touchend', function() {
+          this.style.opacity = '1';
+        });
+      });
+      
+      // Initial call to set correct viewport
+      updateViewport();
+      
+      // Add active state for touch devices
+      const artistCards = document.querySelectorAll('.artist');
+      artistCards.forEach(artist => {
+        artist.addEventListener('touchstart', function() {
+          this.classList.add('touch-active');
+        }, {passive: true});
+        
+        artist.addEventListener('touchend', function() {
+          setTimeout(() => {
+            this.classList.remove('touch-active');
+          }, 300);
+        }, {passive: true});
+      });
+      
+      // Fix viewport height issues on mobile (100vh problem)
+      function setVH() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+      
+      window.addEventListener('resize', setVH);
+      window.addEventListener('orientationchange', setVH);
+      setVH();
+      
+      // Email copy to clipboard functionality
+      const copyEmailBtn = document.getElementById('copyEmail');
+      if (copyEmailBtn) {
+        copyEmailBtn.addEventListener('click', function() {
+          const emailText = 'contact@thesakaigroup.com';
+          navigator.clipboard.writeText(emailText).then(function() {
+            // Visual feedback for copy success
+            const originalText = copyEmailBtn.innerHTML;
+            copyEmailBtn.innerHTML = 'Email Copied! <i class="bx bx-check"></i>';
+            copyEmailBtn.classList.add('copied');
+            
+            setTimeout(function() {
+              copyEmailBtn.innerHTML = originalText;
+              copyEmailBtn.classList.remove('copied');
+            }, 2000);
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
